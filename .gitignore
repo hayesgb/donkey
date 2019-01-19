@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-.ssh/
-env/
-.pycharm_helpers/
-.bash*
-.cache/
-.wget*
-.profile*
-=======
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -111,4 +102,3 @@ venv.bak/
 
 # mypy
 .mypy_cache/
->>>>>>> ecd1573415bc49378a7e97402e670c22fab95f20
