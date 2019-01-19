@@ -6,19 +6,19 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 
-setup(name='donkey',
+setup(name='donkeycar',
       version='2.5.7',
       description='Self driving library for python.',
       long_description=long_description,
       long_description_content_type="text/markdown",
-      url='https://github.com/autorope/donkey',
-      download_url='https://github.com/autorope/donkey/archive/2.1.5.tar.gz',
+      url='https://github.com/autorope/donkeycar',
+      download_url='https://github.com/autorope/donkeycar/archive/2.1.5.tar.gz',
       author='Will Roscoe',
       author_email='wroscoe@gmail.com',
       license='MIT',
       entry_points={
           'console_scripts': [
-              'donkey=donkey.management.base:execute_from_command_line',
+              'donkey=donkeycar.management.base:execute_from_command_line',
           ],
       },
       install_requires=['numpy',
@@ -71,7 +71,7 @@ setup(name='donkey',
           'Programming Language :: Python :: 3.5',
           'Programming Language :: Python :: 3.6',
       ],
-      keywords='selfdriving cars donkey diyrobocars',
+      keywords='selfdriving cars donkeycar diyrobocars',
 
       packages=find_packages(exclude=(['tests', 'docs', 'site', 'env'])),
       )

@@ -22,7 +22,7 @@ ADD . /app
 #start the jupyter notebook
 CMD jupyter notebook --no-browser --ip 0.0.0.0 --port 8888 --allow-root  --notebook-dir=/app/notebooks
 
-#port for donkey
+#port for donkeycar
 EXPOSE 8887
 
 #port for jupyter notebook

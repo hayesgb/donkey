@@ -3,19 +3,19 @@ vehicle:
   parts:
 
     loop_timestamp:
-      class: donkey.parts.clock.Timestamp
+      class: donkeycar.parts.clock.Timestamp
 
     pi_camera:
-      class: donkey.parts.cameras.PiCamera
+      class: donkeycar.parts.cameras.PiCamera
 
     web_controller:
-      class: donkey.parts.web_controller.LocalWebController
+      class: donkeycar.parts.web_controller.LocalWebController
 
 
 
     keras_linear:
       source: <url>
-      class: donkey.parts.keras.KerasLinear
+      class: donkeycar.parts.keras.KerasLinear
       init:
         args:
           model_path: str
@@ -31,11 +31,11 @@ vehicle:
 
 
     steering_actuator:
-      class: donkey.parts.actuators.PWMSteering
+      class: donkeycar.parts.actuators.PWMSteering
       kwargs:
 
     throttle:
-      class: donkey.parts.actuators.PWMSteering
+      class: donkeycar.parts.actuators.PWMSteering
       kwargs:
 
 
