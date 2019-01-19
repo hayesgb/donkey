@@ -15,6 +15,7 @@
       <change beforePath="$PROJECT_DIR$/../donkey/donkeycar/gregscar/requirements.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../donkey/donkeycar/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../donkey/donkeycar/mkdocs.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../donkey/donkeycar/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/../donkey/donkeycar/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../donkey/racer1/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/../donkey/racer1/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../donkey/racer1/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../donkey/racer1/manage.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,15 +27,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="manage.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../donkey/racer1/manage.py">
+      <file leaf-file-name="manage.py" pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;10e28ce0-1cda-4cf8-bc5f-59412cda5ec5&gt;/home/pi/racer1/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="51" column="28" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="28" />
+            <state relative-caret-position="-92">
               <folding>
                 <element signature="e#488#497#0" expanded="true" />
-                <element signature="e#4552#5838#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="drive_requirements.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../donkey/donkey2/drive_requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="88" selection-start-line="7" selection-start-column="88" selection-end-line="7" selection-end-column="88" />
             </state>
           </provider>
         </entry>
@@ -52,6 +60,7 @@
         <option value="$PROJECT_DIR$/../donkey/speedracer/drive.py" />
         <option value="$PROJECT_DIR$/../donkey/donkey2/drive_requirements.txt" />
         <option value="$PROJECT_DIR$/../donkey/racer1/manage.py" />
+        <option value="$PROJECT_DIR$/../donkey/racer1/config.py" />
       </list>
     </option>
   </component>
@@ -89,6 +98,11 @@
             <path>
               <item name="donkeycar" type="b2602c69:ProjectViewProjectNode" />
               <item name="donkey" type="462c0819:PsiDirectoryNode" />
+              <item name="donkey2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="donkeycar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="donkey" type="462c0819:PsiDirectoryNode" />
               <item name="racer1" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -99,7 +113,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
@@ -108,7 +122,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/anaconda/envs/blog/bin/python" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -154,7 +168,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="278" y="91" width="1477" height="801" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
@@ -164,6 +177,7 @@
       <window_info anchor="bottom" id="Version Control" weight="0.32994923" />
       <window_info anchor="bottom" id="Python Console" />
       <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="right" id="Remote Host" visible="true" weight="0.32961673" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947736" />
       <window_info anchor="bottom" id="Docker" />
       <window_info anchor="right" id="Database" />
@@ -174,7 +188,6 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Remote Host" weight="0.32961673" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -216,21 +229,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../donkey/donkey2/drive_requirements.txt">
+    <entry file="file://$PROJECT_DIR$/../donkey/racer1/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="88" selection-start-line="7" selection-start-column="88" selection-end-line="7" selection-end-column="88" />
+        <state relative-caret-position="365">
+          <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../donkey/racer1/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="51" column="28" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="28" />
+        <state relative-caret-position="233">
+          <caret line="60" column="24" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
           <folding>
             <element signature="e#488#497#0" expanded="true" />
             <element signature="e#4552#5838#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../donkey/donkey2/drive_requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="88" selection-start-line="7" selection-start-column="88" selection-end-line="7" selection-end-column="88" />
         </state>
       </provider>
     </entry>
