@@ -3,7 +3,7 @@ import os
 import pkg_resources  # part of setuptools
 import sys
 
-__version__ = pkg_resources.require("donkeycar")[0].version
+__version__ = pkg_resources.require("donkey")[0].version
 print('using donkey version: {} ...'.format(__version__))
 
 

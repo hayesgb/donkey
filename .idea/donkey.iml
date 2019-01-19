@@ -9,7 +9,7 @@
     <option name="TEMPLATE_CONFIGURATION" value="Jinja2" />
     <option name="TEMPLATE_FOLDERS">
       <list>
-        <option value="$MODULE_DIR$/donkey2/donkeycar/parts/web_controller/templates" />
+        <option value="$MODULE_DIR$/../donkeycar/donkey2/donkeycar/parts/web_controller/templates" />
       </list>
     </option>
   </component>
