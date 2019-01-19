@@ -1,0 +1,7 @@
+.ssh/
+env/
+.pycharm_helpers/
+.bash*
+.cache/
+.wget*
+.profile*
