@@ -15,6 +15,7 @@
       <change beforePath="$PROJECT_DIR$/../donkey/donkeycar/gregscar/requirements.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../donkey/donkeycar/mkdocs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../donkey/donkeycar/mkdocs.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../donkey/donkeycar/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/../donkey/donkeycar/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../donkey/racer1/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../donkey/racer1/manage.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,7 +25,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="manage.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../donkey/racer1/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="51" column="28" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="28" />
+              <folding>
+                <element signature="e#488#497#0" expanded="true" />
+                <element signature="e#4552#5838#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../donkey" />
@@ -36,6 +51,7 @@
         <option value="$PROJECT_DIR$/../donkey/speedracer/drive_requirements.txt" />
         <option value="$PROJECT_DIR$/../donkey/speedracer/drive.py" />
         <option value="$PROJECT_DIR$/../donkey/donkey2/drive_requirements.txt" />
+        <option value="$PROJECT_DIR$/../donkey/racer1/manage.py" />
       </list>
     </option>
   </component>
@@ -138,6 +154,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="278" y="91" width="1477" height="801" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
@@ -203,6 +220,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="88" selection-start-line="7" selection-start-column="88" selection-end-line="7" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../donkey/racer1/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="51" column="28" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="28" />
+          <folding>
+            <element signature="e#488#497#0" expanded="true" />
+            <element signature="e#4552#5838#0" />
+          </folding>
         </state>
       </provider>
     </entry>

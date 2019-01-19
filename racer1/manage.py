@@ -21,11 +21,12 @@ from donkeycar.parts.transform import Lambda
 from donkeycar.parts.keras import KerasLinear
 from donkeycar.parts.actuator import PCA9685, PWMSteering, PWMThrottle
 from donkeycar.parts.datastore import TubGroup, TubWriter
-from donkeycar.parts.web_controller import LocalWebController
+# from donkeycar.parts.web_controller import LocalWebController
 from donkeycar.parts.clock import Timestamp
 from donkeycar.parts.datastore import TubGroup, TubWriter
 from donkeycar.parts.keras import KerasLinear
 from donkeycar.parts.transform import Lambda
+from donkeypart_ps3_controller import PS3JoystickController
 
 
 def drive(cfg, model_path=None, use_chaos=False):
@@ -48,7 +49,12 @@ def drive(cfg, model_path=None, use_chaos=False):
     cam = PiCamera(resolution=cfg.CAMERA_RESOLUTION)
     V.add(cam, outputs=['cam/image_array'], threaded=True)
 
-    ctr = LocalWebController(use_chaos=use_chaos)
+    ctr = PS3JoystickController(
+        throttle_scale=cfg.JOYSTICK_MAX_THROTTLE,
+        steering_scale=cfg.JOYSTICK_STEERING_SCALE,
+        auto_record_on_throttle=cfg.AUTO_RECORD_ON_THROTTLE
+    )
+
     V.add(ctr,
           inputs=['cam/image_array'],
           outputs=['user/angle', 'user/throttle', 'user/mode', 'recording'],
