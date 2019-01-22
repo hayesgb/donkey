@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f0dcb276-1da0-48ae-9e44-e7778b91df0e" name="DonkeyCar" url="http://pi@donkeypi.local">
+        <fileTransfer host="pi@donkeypi.local" port="22" privateKey="$USER_HOME$/.ssh/id_rsa" rootFolder="/home/pi" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
