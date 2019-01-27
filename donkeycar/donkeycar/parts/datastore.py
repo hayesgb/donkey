@@ -89,7 +89,9 @@ class Tub(object):
 
     def get_index(self, shuffled=True):
         files = next(os.walk(self.path))[2]
+        
         record_files = [f for f in files if f[:6] == 'record']
+        print(record_files)
 
         def get_file_ix(file_name):
             try:
@@ -105,7 +107,7 @@ class Tub(object):
             random.shuffle(nums)
         else:
             nums = sorted(nums)
-
+        print(nums)
         return nums
 
     @property
@@ -222,6 +224,9 @@ class Tub(object):
                 json_data = json.load(fp)
         except UnicodeDecodeError:
             raise Exception('bad record: %d. You may want to run `python manage.py check --fix`' % ix)
+        except json.decoder.JSONDecodeError:
+            print('Problem with {} due to error!!'.format(ix))
+            raise Exception("Bad record!!")
         except FileNotFoundError:
             raise
         except:
@@ -629,22 +634,28 @@ class TubTimeStacker(TubImageStacker):
 
 class TubGroup(Tub):
     def __init__(self, tub_paths_arg):
+        print('Passed tub_paths_arg as:  {}'.format(tub_paths_arg))
         tub_paths = util.files.expand_path_arg(tub_paths_arg)
+        print('Tub_paths is:  {}'.format(tub_paths))
         logger.info('TubGroup:tubpaths: {}'.format(tub_paths))
         self.tubs = [Tub(path) for path in tub_paths]
+        print('Found tubs are:  {}'.format(self.tubs))
         self.input_types = {}
 
         record_count = 0
         for t in self.tubs:
+            print(t)
             t.update_df()
             record_count += len(t.df)
             self.input_types.update(dict(zip(t.inputs, t.types)))
+            print(self.input_types)
 
-        logger.info('joining the tubs {} records together. This could take {} minutes.'.format(record_count,
-                                                                                         int(record_count / 300000)))
+        # # logger.info('joining the tubs {} records together. This could take {} minutes.'.format(record_count,
+        #                                                                                  int(record_count / 300000)))
 
         self.meta = {'inputs': list(self.input_types.keys()),
                      'types': list(self.input_types.values())}
+        print(self.meta)
 
         self.df = pd.concat([t.df for t in self.tubs], axis=0, join='inner')
 

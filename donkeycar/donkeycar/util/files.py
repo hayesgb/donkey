@@ -50,6 +50,8 @@ def time_since_last_file_edited(path):
 def expand_path_mask(path):
     matches = []
     path = os.path.expanduser(path)
+    print('ExpandUser path')
+    print(path)
     for file in glob.glob(path):
         if os.path.isdir(file):
             matches.append(os.path.join(os.path.abspath(file)))

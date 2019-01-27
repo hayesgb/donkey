@@ -167,7 +167,8 @@ def train(cfg, tub_names, new_model_path, base_model_path=None):
              val_gen,
              saved_model_path=new_model_path,
              steps=steps_per_epoch,
-             train_split=cfg.TRAIN_TEST_SPLIT)
+             train_split=cfg.TRAIN_TEST_SPLIT,
+             min_delta=0.002)
 
 
 if __name__ == '__main__':
