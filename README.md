@@ -1,0 +1,1 @@
+This repository was created from the [DonkeyCar project](https://github.com/autorope/donkeycar).  It is not an exact fork of the project, as it constitutes an combination of all the parts needed to run my car in different configurations.
