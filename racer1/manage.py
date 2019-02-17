@@ -20,8 +20,8 @@ from donkeycar.parts.camera import PiCamera
 from donkeycar.parts.transform import Lambda
 from donkeycar.parts.keras import KerasLinear
 from donkeycar.parts.actuator import PCA9685, PWMSteering, PWMThrottle
-from donkeycar.parts.datastore import TubGroup, TubWriter
-# from donkeycar.parts.web_controller import LocalWebController
+from donkeycar.parts.datastore import TubGroup, TubWriter, TubHandler
+from donkeycar.parts.web_controller import LocalWebController
 from donkeycar.parts.clock import Timestamp
 from donkeycar.parts.datastore import TubGroup, TubWriter
 from donkeycar.parts.keras import KerasLinear
@@ -49,11 +49,15 @@ def drive(cfg, model_path=None, use_chaos=False):
     cam = PiCamera(resolution=cfg.CAMERA_RESOLUTION)
     V.add(cam, outputs=['cam/image_array'], threaded=True)
 
+    # if use_joystick:
+
     ctr = PS3JoystickController(
         throttle_scale=cfg.JOYSTICK_MAX_THROTTLE,
         steering_scale=cfg.JOYSTICK_STEERING_SCALE,
         auto_record_on_throttle=cfg.AUTO_RECORD_ON_THROTTLE
     )
+    # else:
+    #     ctr = LocalWebController(use_chaos=use_chaos)
 
     V.add(ctr,
           inputs=['cam/image_array'],
@@ -121,11 +125,11 @@ def drive(cfg, model_path=None, use_chaos=False):
     types = ['image_array', 'float', 'float',  'str', 'str']
 
     # multiple tubs
-    # th = TubHandler(path=cfg.DATA_PATH)
-    # tub = th.new_tub_writer(inputs=inputs, types=types)
+    th = TubHandler(path=cfg.DATA_PATH)
+    tub = th.new_tub_writer(inputs=inputs, types=types)
 
     # single tub
-    tub = TubWriter(path=cfg.TUB_PATH, inputs=inputs, types=types)
+    # tub = TubWriter(path=cfg.TUB_PATH, inputs=inputs, types=types)
     V.add(tub, inputs=inputs, run_condition='recording')
 
     # run the vehicle
@@ -168,7 +172,7 @@ def train(cfg, tub_names, new_model_path, base_model_path=None):
              saved_model_path=new_model_path,
              steps=steps_per_epoch,
              train_split=cfg.TRAIN_TEST_SPLIT,
-             min_delta=0.002)
+             min_delta=0.0005)
 
 
 if __name__ == '__main__':
